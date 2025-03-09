@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #feffea;
+    display: inline-block;
+    width: 30rem;
+    height: 100vh;
+    position: absolute;
+    right: -100%;
+    top: 6rem;
+    transition: 1s all;
+    transition-timing-function: ease-in-out;
+    z-index: 9999;
+}
+
+.navbar ul {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    font-weight: 300;
+    color: #2d2d2d;
+}
+
+.navbar.active {
+    right: 0;
+}
+
+@media (width >= 48rem) {
+    .navbar {
+        right: auto;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        position: static;
+        display: flex;
+    }
+    
+    .navbar ul {
+        flex-direction: row;
+        display: flex;
+    }
+    
+    .navbar ul li {
+        padding: 10px 4px;
+        margin-left: 40px;
+    }
+}
