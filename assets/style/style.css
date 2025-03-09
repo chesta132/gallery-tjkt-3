@@ -1,11 +1,11 @@
 .navbar {
     background-color: #feffea;
     display: inline-block;
-    width: 30rem;
+    width: 45%;
     height: 100vh;
     position: absolute;
-    right: -100%;
-    top: 6rem;
+    right: -150%;
+    top: 4rem;
     transition: 1s all;
     transition-timing-function: ease-in-out;
     z-index: 9999;
