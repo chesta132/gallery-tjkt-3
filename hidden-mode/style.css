@@ -1,88 +1,99 @@
 :root {
-    --text-color: #E8BCB9;
+  --textgrey-color: #979797;
+  --textwhite-color: #fcfcfc;
+  --main-color: #F5F5F5;
+  --black: #1f1f1f;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
+
+/* Scroll Anim */
+
+.anim.left {
+  transform: translateX(-150%);
+  filter: blur(10px);
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
+}
+
+.anim.right {
+  transform: translateX(150%);
+  filter: blur(10px);
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
+}
+
+.anim.center {
+  transform: translateY(5rem);
+  filter: blur(10px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.anim.left.scrolled {
+  transform: translateX(0);
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.5s ease-in-out;
+}
+
+.anim.right.scrolled {
+  transform: translateX(0);
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.5s ease-in-out;
+}
+
+.anim.center.scrolled {
+  transform: translateY(0);
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+
+/* END */
 
 /* Scroll bar */
 ::-webkit-scrollbar {
-    width: 3px;
-    height: 1px;
-    padding: 1px;
+  width: 3px;
+  height: 1px;
+  padding: 1px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--fourth-color);
-    border-radius: 10px;
+  background-color: var(--main-color);
+  border-radius: 10px;
 }
+
+/* END */
+
+
+/* .content1 {
+  background: linear-gradient(90deg, rgba(31, 31, 31, 1) 0%, rgb(61, 61, 61) 50%, rgba(31, 31, 31, 1) 100%);
+} */
 
 
 .typewritter {
-    padding: 2rem;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.37);
-    border-radius: 30px;
+  padding: 2rem;
+  /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.37);
+  border-radius: 30px; */
 }
 
-.typewritter h1, .typewritter p {
-    text-shadow: 8px 10px 32px #000000;
+.typewritter h1,
+.typewritter p {
+  text-shadow: 8px 10px 18px #000000;
 }
 
-.gallery10 img {
-    margin-top: 5rem;
-    border-radius: 10px;
-}
-
-.gallery10 h1 span {
-    color: var(--text-color);
-}
-
-.anim {
-    opacity: 0;
-    margin-bottom: 5rem;
-    transform: translateX(-100%);
-    filter: blur(10px);
-    transition: all 1s ease-in-out;
-    margin: 1rem;
-}
-
-.anim.scrolled {
-    opacity: 1;
-    transform: translateX(0);
-    filter: blur(0);
-    margin: 1rem;
-}
-
-.lanjut-yapping a {
-    box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.37);
-    transition: all 500ms;
-}
-
-.lanjut-yapping .btn-ig {
-    background: #833ab4;
-    background: linear-gradient(
-    to right,
-    #833ab4,#fd1d1d,#fcb045
-    );
-}
-
-.lanjut-yapping .btn-wa {
-    background-color: #25d366;
-}
-
-.lanjut-yapping a:hover {
-    transform: scale(105%);
-    transition: all 500ms;
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
+.content1 .start {
+  color: var(--textwhite-color);
 }
