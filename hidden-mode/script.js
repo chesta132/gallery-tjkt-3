@@ -13,7 +13,7 @@ window.onload = function () {
       "Yang dimana page, lebih tepatnya seluruh web ini dibikin khusus buat lu",
       "Gw tahu kalo lu udah tau tapi kayaknya...",
       "Gw suka...",
-      "I'm fell in love with you",
+      "Gw sayang sama lu",
       "....",
       "Gemeteran gw ngetiknya ajg",
       "BTW, Scroll"
