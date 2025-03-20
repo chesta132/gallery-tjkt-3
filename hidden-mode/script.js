@@ -12,8 +12,7 @@ window.onload = function () {
     const paragraphs = [
       "Yang dimana page, lebih tepatnya seluruh web ini dibikin khusus buat lu",
       "Gw tahu kalo lu udah tau tapi kayaknya...",
-      "Gw suka...",
-      "Gw sayang sama lu",
+      "Gw suka(advanced/level 2) sama lu",
       "....",
       "Gemeteran gw ngetiknya ajg",
       "BTW, Scroll"
