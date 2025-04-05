@@ -12,10 +12,10 @@ window.onload = function () {
     const paragraphs = [
       "Yang dimana page, lebih tepatnya seluruh web ini dibikin khusus buat lu",
       "Gw tahu kalo lu udah tau tapi kayaknya...",
-      "Gw suka(advanced/level 2) sama lu",
+      "GW SAYANG SAMA LU!",
       "....",
       "Gemeteran gw ngetiknya ajg",
-      "BTW, Scroll"
+      "BTW, scroll"
     ];
 
     // Jalankan typewriter dan tunggu sampai selesai
